@@ -1,10 +1,12 @@
 body{
 	margin: 0 !important;
 	padding: 0 !important;
+	overflow-x: hidden;
+	font-family: sans-serif, arial;
 }
 .banner{
 	position: absolute;
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	background: url(images/banner.jpg) center center no-repeat;
 	background-size: cover;
@@ -15,13 +17,14 @@ body{
 	justify-content: space-between;
 	align-items: center ;
 	position: fixed;
+	z-index: 999;
 	width: 100vw;
 	height: 2rem;
 	background-color: #ffffff;
 	.web-logo{
 	    position: relative;
 	    left: 5%;
-	    height: 100%;
+	    height: 150%;
 	    aspect-ratio: 1;
 	    background: url(images/blog-icon.png) center center no-repeat;
 	    background-size: contain;
@@ -33,14 +36,13 @@ body{
 		right: 5%;
 		gap: 2rem;
 		.home, .about, .write-blog{
-			font-family: Arial, sans-serif;
 			font-size: 16px;
 			color: black;
 			text-decoration-line: none;
 		}
 		.login{
 			cursor: pointer;
-			height: 4vh;
+			height: 2rem;
 			border: none;
 			border: 1px solid black;
 			border-radius: 50%;
@@ -57,10 +59,67 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
+	column-gap: 2rem;
 	width: 100vw;
 	height: 100vh;
 	.welcome{
+		position: absolute;
+		top: 30%;
 		color: white;
-		font-size: 30px;
+		font-size: 7vh;
+	}
+	.start-button{
+		position: absolute;
+		top: 50%;
+		color: black;
+		text-decoration-line: none;
+		font-size: 3vh;
+		background: white;
+		border-radius: 5%;
+		padding: 1em;
+	}
+}
+.blog-preview{
+	display: grid;
+	grid-template-columns: auto auto;
+	position: relative;
+	height: 150vh;
+	width: 100vw;
+	max-width: -webkit-fill-available;
+	background: white;
+	gap: 5rem;
+	padding: 3rem;
+	.blog-post{
+		background: white;
+		.blog-avatar{
+			width: 100%;
+			height: 50%;
+			border-radius: 5%;
+			background: url(images/example.jpg) center center no-repeat;
+			background-size: cover;
+		}
+		.blog-title{
+			width: 100%;
+		    height: 5rem;
+		    font-weight: 600;
+		    font-size: 3vh;
+		    padding: 2% 0;
+		}
+		.blog-content{
+			width: 100%;
+		    height: 6rem;
+		    font-size: 2vh;
+		    padding-top: 2%;
+		    padding-bottom: 1.5rem;
+		}
+		.read-button{
+			text-decoration-line: none;
+		    background: black;
+		    color: white;
+		    padding: 0.7em 1em;
+		    margin-bottom: 1em;
+		    border-radius: 10%;
+		}
 	}
 }
