@@ -60,21 +60,17 @@ body{
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	column-gap: 2rem;
+	gap: 2rem;
 	width: 100vw;
 	height: 100vh;
 	.welcome{
-		position: absolute;
-		top: 30%;
 		color: white;
-		font-size: 7vh;
+		font-size: 2.5rem;
 	}
 	.start-button{
-		position: absolute;
-		top: 50%;
 		color: black;
 		text-decoration-line: none;
-		font-size: 3vh;
+		font-size: 1rem;
 		background: white;
 		border-radius: 5%;
 		padding: 1em;
