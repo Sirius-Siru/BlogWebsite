@@ -51,6 +51,40 @@ body{
 			background-size: contain;
 		}
 	}
+	.menu-icon{
+		display: none;
+	}
+	@media (max-width: 768px){
+		.hal{
+			display: none;
+		}
+		.menu-icon{
+			position: fixed;
+			right: 5%;
+			width: 2rem;
+			border: none;
+			aspect-ratio: 1;	
+			background: url(images/menu-icon.png) center center no-repeat;
+			background-size: contain;
+			.hawl{
+				display: none;
+				position: absolute;
+		        right: -2.4rem;
+		        top: 2.9rem;
+		        width: 50vw;
+		        height: 95vh;
+		        background-color: white;
+				.home, .about, .write-blog, .login, .signup{
+					position: relative;
+					display: block;
+					font-size: 2rem;
+					color: black;
+					padding: 2rem;
+					text-decoration-line: none;
+				}
+			}
+		}
+	}
 }
 .container{
 	position: relative;
